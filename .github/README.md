@@ -46,3 +46,20 @@ impl<T> Drop for Foo<T> {
 https://doc.rust-lang.org/reference/conditional-compilation.html#the-cfg_attr-attribute
 [`prepend`]: https://docs.rs/add-syntax/0.1/add_syntax/attr.prepend.html
 [`append`]: https://docs.rs/add-syntax/0.1/add_syntax/attr.append.html
+
+Documentation
+-------------
+
+[Documentation is available on docs.rs.](https://docs.rs/add-syntax)
+
+License
+-------
+
+add-syntax is licensed under version 2 of the Apache License.
+See [LICENSE](LICENSE).
+
+Contributing
+------------
+
+By contributing to add-syntax, you agree that your contribution may be used
+according to the terms of add-syntax’s license.
