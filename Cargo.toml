@@ -1,16 +1,60 @@
 [package]
 name = "add-syntax"
-version = "0.1.1-dev"
+version = "0.1.1"
 edition = "2018"
 rust-version = "1.53"
 description = """Attribute macros that prepend or append arbitrary syntax. \
     Useful with `cfg_attr`."""
-documentation = "https://docs.rs/add-syntax"
-readme = "misc/crate-readme.md"
-repository = "https://github.com/taylordotfish/add-syntax"
+repository = "https://github.com/smallvec/add-syntax"
 license = "Apache-2.0"
 keywords = ["macro", "attribute", "syntax", "token", "conditional"]
 categories = ["development-tools::build-utils", "rust-patterns"]
+exclude = ["justfile", "rustfmt.toml", ".gitignore", ".github/"]
+authors = [
+  "Alejandro Vaz <alejandro.vaz.myt@gmail.com>",
+  "taylor.fish <contact@taylor.fish>",
+]
 
 [lib]
 proc-macro = true
+
+[lints.rust]
+unused = "deny"
+deprecated = "deny"
+unreachable_code = "deny"
+nonstandard_style = "deny"
+warnings = "deny"
+missing_debug_implementations = "deny"
+dropping_copy_types = "deny"
+dropping_references = "deny"
+elided_lifetimes_in_paths = "deny"
+explicit_builtin_cfgs_in_flags = "deny"
+forgetting_copy_types = "deny"
+forgetting_references = "deny"
+impl_trait_redundant_captures = "deny"
+invalid_doc_attributes = "deny"
+irrefutable_let_patterns = "deny"
+macro_use_extern_crate = "deny"
+missing_copy_implementations = "deny"
+mutable_transmutes = "deny"
+noop_method_call = "deny"
+opaque_hidden_inferred_bound = "deny"
+overflowing_literals = "deny"
+redundant_imports = "deny"
+single_use_lifetimes = "deny"
+trivial_casts = "deny"
+unknown_lints = "deny"
+arithmetic_overflow = "deny"
+missing_docs = "deny"
+type_alias_bounds = "deny"
+
+[lints.clippy]
+all = "deny"
+
+[lints.rustdoc]
+all = "deny"
+
+[lints.cargo]
+unknown_lints = "deny"
+unused_dependencies = "deny"
+non_kebab_case_features = "deny"
