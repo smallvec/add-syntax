@@ -12,7 +12,7 @@ categories = ["development-tools::build-utils", "rust-patterns"]
 exclude = ["justfile", "rustfmt.toml", ".gitignore", ".github/"]
 authors = [
   "Alejandro Vaz <alejandro.vaz.myt@gmail.com>",
-  "Taylor <contact@taylor.fish>",
+  "taylor.fish <contact@taylor.fish>",
 ]
 
 [lib]
